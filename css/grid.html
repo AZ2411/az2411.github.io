@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div div, .div2_column div, .div3_column div , .div4 div ,.div5 div {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid gray;
+    }
+    .div div:hover {
+        border: 3px solid red;
+    }
+    .div,.div2_column, .div4, .div5   {
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+    .div2_column {
+        display: grid
+        ;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+    
+    }
+    .div3_column {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .div3_column{
+        grid-gap: 5px;
+
+    }
+    .div4 .onediv  {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .div5 .twodiv {
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+
+</style>
+<body>
+    <h1>Grid</h1>
+    <div class="div">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: rgb(18, 177, 10);">2</div>
+        <div style="background-color: rgb(107, 23, 202);">3</div>
+        <div style="background-color: rgb(195, 208, 26);">4</div>
+        <div style="background-color: rgb(28, 179, 153);">5</div>
+        <div style="background-color: rgb(99, 26, 26);">6</div>
+        <div style="background-color: rgb(9, 8, 8);">7</div>
+        <div style="background-color: rgb(118, 144, 231);">8</div>
+        <div style="background-color: rgb(173, 231, 12);">9</div>
+    </div>
+    <hr>
+    <div class="div2_column">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: rgb(18, 177, 10);">2</div>
+        <div style="background-color: rgb(107, 23, 202);">3</div>
+        <div style="background-color: rgb(195, 208, 26);">4</div>
+        <div style="background-color: rgb(28, 179, 153);">5</div>
+        <div style="background-color: rgb(99, 26, 26);">6</div>
+        <div style="background-color: rgb(9, 8, 8);">7</div>
+        <div style="background-color: rgb(118, 144, 231);">8</div>
+        <div style="background-color: rgb(173, 231, 12);">9</div>
+    </div>
+    <hr>
+    <div class="div3_column">
+        <div style="background-color: red;">1</div>
+        <div style="background-color: rgb(18, 177, 10);">2</div>
+        <div style="background-color: rgb(107, 23, 202);">3</div>
+        <div style="background-color: rgb(195, 208, 26);">4</div>
+        <div style="background-color: rgb(28, 179, 153);">5</div>
+        <div style="background-color: rgb(99, 26, 26);">6</div>
+        <div style="background-color: rgb(9, 8, 8);">7</div>
+        <div style="background-color: rgb(118, 144, 231);">8</div>
+        <div style="background-color: rgb(173, 231, 12);">9</div>
+    </div>
+    <hr>
+    <div class="div4">
+        <div style="background-color: red;" class="onediv">1</div>
+        <div style="background-color: rgb(18, 177, 10);" >2</div>
+        <div style="background-color: rgb(107, 23, 202);">3</div>
+        <div style="background-color: rgb(195, 208, 26);">4</div>
+        <div style="background-color: rgb(28, 179, 153);">5</div>
+        <div style="background-color: rgb(99, 26, 26);">6</div>
+        <div style="background-color: rgb(9, 8, 8);">7</div>
+        <div style="background-color: rgb(118, 144, 231);">8</div>
+        <div style="background-color: rgb(173, 231, 12);">9</div>
+    </div>
+    <hr>
+    <div class="div5">
+        <div style="background-color: red;" class="twodiv">1</div>
+        <div style="background-color: rgb(18, 177, 10);" >2</div>
+        <div style="background-color: rgb(107, 23, 202);">3</div>
+        <div style="background-color: rgb(195, 208, 26);">4</div>
+        <div style="background-color: rgb(28, 179, 153);">5</div>
+        <div style="background-color: rgb(99, 26, 26);">6</div>
+        <div style="background-color: rgb(9, 8, 8);">7</div>
+        <div style="background-color: rgb(118, 144, 231);">8</div>
+        <div style="background-color: rgb(173, 231, 12);">9</div>
+    </div>
+
+</body>
+</html>

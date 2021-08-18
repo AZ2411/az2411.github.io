@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Registration</h3>
+    <form action="register.php" method="POST" onsubmit="return check()"  >
+        <label id="error"></label> <br>
+        <label for="name">NAME</label> <br>
+        <input type="text" name="name" id="name" required='required'> <br>
+        <label for="email">email</label> <br>
+        <input type="email" name="email" id="email"  required='required'> <br>
+        <label for="pass">PASSEORD</label> <br>
+        <input type="password" name="pass" id="pass"  required='required'> <br>
+        <label for="confirmPassword">ConfirmPassword</label> <br>
+        <input type="password" name="confirmPassword" id="confirmPassword"  required='required'> <br>
+        <input type="submit" value="Register"> <br>
+    </form> 
+    <script>
+        function check() {
+            
+            let firpass = document.getElementById('pass').value
+            let compass = document.getElementById('confirmPassword').value
+            console.log(firpass)
+                if(firpass == compass) {
+                    return true
+                } else {
+                    let error = document.querySelector('#error');
+                    error.style.color='red'
+                    error.innerHTML='password and confirm password does not match'
+                    
+                    return false;
+                }
+            
+        }
+    </script>
+</body>
+</html>

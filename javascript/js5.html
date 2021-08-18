@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Js condition if/else
+    </h1>
+    <script>
+        function qu() {
+            var unitprice = 200
+        var qu = parseInt(prompt('Enter qc'))
+        if(qu > 100){
+            unitprice=180
+        }
+        var total =qu * unitprice;
+        alert(` The total is ${total}`)
+        }
+        //event_odd( ) ;
+        function event_odd() {
+var num = parseInt(prompt('Enter Number'))
+if(num%2==1) {
+    alert(`${num} is odd`)
+
+}
+else {
+    alert(`${num} is Event`)
+}
+
+        }
+        Check_num()
+        function Check_num() {
+            var num = parseInt(prompt('Enter number'))
+            if(num>0) {
+                alert(`${num} is positive`)
+
+            }else if(num<0) 
+            {
+                alert(`${num} i negative `)
+            } else {
+                alert(`${num } is Zero`)
+            }
+
+        }
+       
+    </script>
+</body>
+</html>

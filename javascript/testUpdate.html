@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table {
+        color: black;
+       border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+    }
+    th{
+        color: #863A3A;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+     tr:hover {
+        background-color: #eb7f2c;
+        color: white;
+    }
+    td:hover{
+        background-color:  #CE9779;
+       
+    }
+    h1 {
+        text-align: center;
+        color: #7C766F;
+        
+    }
+    
+ input {
+     text-align: center;
+     display: block;
+     margin: 5px;
+     position: relative;
+     
+ }
+ label {
+     display: block;
+ }
+ #name {
+     margin: 50px;
+ }
+    
+
+
+</style>
+
+
+
+
+
+   
+<body>
+    <h1>Student Table</h1>
+    <label  for="name" >Name</label>
+    <input  type="text" id="name" > <br>
+    <label for="age">Age</label>
+    <input type="number" id="age" > <br>
+    <label for="city">City</label>
+    <input type="text" id="city" required='required'> <br>
+    <button onclick="loadTable()">PUT</button> <br>
+    
+    <table>
+        <thead  >
+            <tr>
+                <th>Name</th>
+                <th>age</th>
+                <th>city</th>
+            </tr>
+        </thead>
+        <tbody id="tableData">
+          
+        </tbody>
+    </table>
+
+    
+    <script>
+         
+        
+
+function loadTable() {
+    
+   
+    var objectOne =document.getElementById('name').value
+        var objectTwo =document.getElementById('age').value
+        var objectThree = document.getElementById('city').value
+        var studentData = [{name : objectOne,
+                             age : objectTwo ,
+                             city : objectThree}]
+        
+                                console.log(studentData)
+
+       
+            const tableBody = document.getElementById('tableData');
+            let dataHtml = '';
+        for( var student of studentData) {
+
+            dataHtml += ` <tr>
+                       <td>
+                        ${student.name}
+                       </td>
+                       <td>
+                        ${student.age}
+                       </td>
+                       <td>
+                        ${student.city}
+                       </td>
+                   </tr> `;    
+                   
+        
+        
+        console.log(tableBody)
+        
+            
+            
+            tableBody.innerHTML += dataHtml;
+        }
+        
+        
+        }
+        
+        
+        
+        </script>
+</body>
+</html>

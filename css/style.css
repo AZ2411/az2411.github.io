@@ -1,0 +1,44 @@
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: #00539F;
+    
+    text-align: center;
+    text-shadow: 2px 2px  rgb(12, 66, 204);
+  }
+  /*
+p { color: #19c6e0;
+    
+    word-spacing: 15px;
+    font-size: 20px;
+    } */
+*{
+    margin: 0;
+    
+}
+
+a [target="_blank"] {
+    text-decoration: none;
+}
+
+#myp {
+    color: black;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+   
+}
+
+.one{
+    text-indent: 20px;
+    color: navy;
+    margin: 19px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+
+p.desc a {
+    color: red;
+    font-size: 50px;
+}

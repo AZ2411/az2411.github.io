@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .oneclass {
+        border: 1px solid red;
+        width: 1000px;
+        height: 500px;
+    }
+    .oneclass .pone {
+        position: relative;
+        width: 300px;
+        height: 100px;
+        top: 50px;
+        left: 500px;
+        border: 1px solid black;
+    }
+    .twoclass{
+        border: 1px solid red;
+        width: 1000px;
+        height: 500px;
+
+    }
+    .twoclass .ptwo {
+        position: absolute;
+        width: 300px;
+        height: 100px;
+        top: 50px;
+        left: 200px;
+        border: 1px solid black;
+    }
+    .fixed {
+        position: fixed;
+        top: 100px;
+        left: 250px;
+        width: 100px;
+
+
+    }
+
+</style>
+<body>
+    <h1>Fixed</h1>
+    <h2>Testing Fixed</h2>
+
+    <div class="oneclass">
+        <p class="pone">Position Relative</p>
+    </div>
+    <br>
+    <div class="twoclass">
+        <p class="ptwo">Rob Reiner's "The Story of Us" 
+            is a sad-sack movie about the 
+            misery of a married couple (Bruce
+             Willis and Michelle Pfeiffer) who
+              fight most of the time. Watching 
+              it is like taking a long trip in 
+              a small car with the Bickersons.</p>
+    </div>
+    <div class="fixed">
+        <p>position fixed</p>
+
+    </div>
+    
+
+</body>
+</html>

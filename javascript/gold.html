@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gold calculator</h1>
+<label for="gram">gram</label>
+<input type="number " step="0.01" id="gram"> <br>
+<label for="kpy">Kyat-pae-yway</label>
+<input type="text"  id="kpy"> <br>
+<label for="goldPrice">Gold Price</label>
+<input type="number" id="goldPrice"> <br>
+<label for="wearingPrice">Wearing Price</label>
+<input type="number" id="wearingPrice"> <br>
+<button onclick="show()">Calculate</button>
+
+
+    <script>
+        
+        
+        
+       function show(){
+            var gram = document.getElementById("gram").value
+       
+      let kyat =cal(gram,16.6,'/')
+      
+      console.log(kyat)
+      let kyatvalue = kyat[0] ;
+
+      let pae =cal(kyat[1],16,'*')
+      console.log(pae)
+      let paevalue =pae[0];
+    
+      let yaway =cal(pae[1],8,'*')
+      console.log(yaway)
+      let yawayvalue =yaway[0]
+      //
+      document.getElementById("kpy").value=kyatvalue+'-'+paevalue+'-'+yawayvalue ;
+      console.log(kyatvalue+'-'+paevalue+'-'+yawayvalue)   
+      let goldPrice =parseInt(document.getElementById("goldPrice").value     ) 
+      console.log(goldPrice)
+      let wearingPrice = goldPrice * (kyatvalue + paevalue/16 + yawayvalue/8)
+      console.log(wearingPrice)
+      document.getElementById("wearingPrice").value=wearingPrice.toFixed(0) ;
+
+
+        }
+        function cal(first,second,operation){
+            if(operation =='/'){
+                let intpart = parseInt(first/second);
+                let floatpart =(first/second)-intpart;
+                return [intpart,floatpart];
+                console.log(floatpart)
+            }else{
+                let intpart = parseInt(first*second);
+                let floatpart =(first*second)-intpart;
+                return [intpart,floatpart];
+               
+
+            }
+        }
+       
+    </script>
+</body>
+</html>

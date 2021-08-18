@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>js clock</h1>
+    <label id="myclock" ></label> <br>
+    <button onclick="start()">Start</button> <br>
+    <button onclick="stop()">Stop</button> 
+    <script>
+        var myVar ;
+
+         function start() {
+            setInterval('show()',1000)
+}
+function stop() {
+            clearInterval(myVar);
+}
+       
+        function show() {
+            let now = new Date();
+        document.querySelector('#myclock').innerHTML=now.toLocaleTimeString();
+
+       
+        
+
+        
+        }
+       
+
+    </script>
+</body>
+</html>

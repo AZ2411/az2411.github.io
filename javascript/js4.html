@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js Form to Function with dom</h1>
+    <label for="firstnumber">First Number</label>
+    <input type="number" id="firstnumber" > <br>
+    <label for="secondnumber">Second Number</label>
+    <input type="number" id="secondnumber"> <br>
+    <button onclick="show()" style="color: red;">Calculate</button> <br>
+    <label id="result"></label>
+
+    <script>
+        function show() {
+//Accept input
+//Accept first number
+var firstnumber=parseInt(document.getElementById("firstnumber").value)
+//Accept second number
+var secondnumber=parseInt(document.getElementById("secondnumber").value)
+console.log(firstnumber,secondnumber)
+
+//Calculate
+
+var sum = firstnumber + secondnumber ; 
+var sub = firstnumber - secondnumber ;
+var mul = firstnumber * secondnumber ;
+var div = firstnumber / secondnumber ; 
+var mod = firstnumber % secondnumber ;
+var sq = firstnumber ** secondnumber ;
+
+
+//show result
+
+console.log(sum,sub,mul,div,mod,sq)
+
+var result=`sum : ${sum} <br>
+            sub : ${sub} <br>
+            mul : ${mul} <br>
+            div : ${div} <br>
+            mod : ${mod} <br>
+            sq : ${sq} <br>`;
+            document.getElementById("result").innerHTML=result ;
+
+        }
+    </script>
+</body>
+</html>

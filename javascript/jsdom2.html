@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Js DOM  2</h1>
+    Input &darr;<br>
+    <input type="text" name="" id="input"> <br>
+    <label id="mytext"></label> <br>
+    <button id="my1">Click ME</button>
+    <script>
+        let my1 = document.getElementById("my1");
+        my1.onclick=show
+        function show() {
+            let input = document.getElementById('input').value
+            //document.getElementById('mytext').innerHTML='Hello World'
+            document.querySelector('#mytext').innerHTML=input
+        }
+        
+    </script>
+</body>
+</html>

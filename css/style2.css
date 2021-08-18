@@ -1,0 +1,36 @@
+p.myp span{
+    color: red;
+
+}
+p.dididi > a{
+    color: green
+}
+
+/* sudo selector */
+a:link{
+    color: red;
+    
+}
+a:hover {
+    color: blue;
+    
+}
+a:active {
+    color: green;
+}
+a:visited {
+    color: yellowgreen
+}
+
+div:target {
+    color: green;
+    border: 1px black;
+}
+
+div:hover {
+    color: blue;
+
+}
+div {
+    user-select: contain;
+}

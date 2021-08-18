@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Tree</title>
+</head>
+<body>
+    <h3>DOM Three</h3>
+    <div id="main"><div id="subdiv1">
+            <p>First Child</p>
+            <p>First Child second paragraph</p>
+      </div><div id="subdiv2">
+            <p>Second Child</p>
+            <p>Second Child Second paragraph</p>
+      </div></div>
+      
+
+      <script>
+          let maindiv=document.getElementById('main') ;
+          console.log(maindiv.childNodes[0].childNodes[1].innerHTML);
+          console.log(
+              maindiv.firstChild.childNodes[1]
+          );
+          console.log(maindiv.lastChild.childNodes[3]);
+        console.log(maindiv.firstChild.nextSibling.childNodes[1]);
+       
+          
+      </script>
+</body>
+</html>

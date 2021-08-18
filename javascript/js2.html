@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> js operator</h1>
+   <script>
+       //arithmetic operator{+ - * / % =}
+       //binary operator
+       //unary operator{! ++ ==}
+       // {!}
+       var single = true ;
+       console.log(!single)
+       var pass = false
+       console.log(!pass)
+       //{++}
+       var myNumber = 2
+       console.log(myNumber++)
+       console.log(myNumber)
+       console.log(++myNumber)
+
+       //{--}
+       var yourNumber=--myNumber ;
+       console.log(yourNumber)
+       
+       //ternary operator{? :}
+       //{? ;}
+       var coffee = 500 ;
+       var tea = 550 ;
+       var answer =(coffee>tea)? 'Yes':'Min ga lar par'
+       console.log(answer)
+
+       //logical operator{<,>,<=,>=,&&,||}
+
+       var firstNumber =parseInt( prompt('Enter Number')) ;
+       var secondNumber =parseInt( prompt('Enter Number')) ; 
+       var sum = firstNumber + secondNumber
+       console.log(` The Sum of ${firstNumber} and ${secondNumber} is ${sum} `)
+
+       var thirdNumber =parseInt(prompt('Enter a Number')) ;
+       var Final = (sum + thirdNumber)/3 ;
+       console.log(`Average of ${sum} and ${thirdNumber} is ${Final.toFixed(3)} `)
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>java variable data type</h1>
+    <script>
+        var Name=prompt("Enter your  first name")
+        var Name2= prompt("Enter your last name")
+        document.write(`Your Name is ${Name} ${Name2} <br> `) 
+        //arithmetic operator{+ - * / % =}
+        //{=}
+           var firstNmber=20 // assigmemt oprator "="
+           document.write(firstNmber);
+           var secondNumber=30
+           //{+}
+           var thirdNumber=firstNmber+secondNumber
+           document.write( '<br> sum of 20 and 30 :' + thirdNumber)
+           //{-}
+           var fourthNumber=secondNumber-firstNmber
+           document.write('<br> sub of 30 and 20:' + fourthNumber)
+           //{*}
+           var fifthNumber=firstNmber*secondNumber
+           document.write('<br> Answer' + fifthNumber)
+           //{/}
+           var sixNumber=firstNmber/fifthNumber
+           document.write('<br> Answer;' + sixNumber)
+           //{%}
+           var sevenNumber=firstNmber%thirdNumber
+           document.write('<br> Answer' + sevenNumber)
+           console.log(typeof(firstNmber))
+
+           var firstName='MgMg'
+           var lastName='Gyii'
+           console.log(typeof(firstName))
+           var fullName=firstName+lastName
+           console.log(fullName)
+           document.write('<br> My name is:' + fullName)
+           var single=true
+           console.log(typeof(single))
+           var age=null
+           console.log(typeof(age))
+            //Array
+           var fruitArray=['banana','apple','orange']
+           document.write('<br>' + fruitArray)
+           console.log(fruitArray)
+           var student=['MgMg','18','5;6','Yangon']
+           console.log(student[0])
+            //object
+           var studentObjiect={
+                name : 'Mg Mg',
+                Age : 18 ,
+                city : 'Yangon'
+           }
+           console.log(typeof(studentObjiect))
+           console.log(studentObjiect)
+           console.log(studentObjiect.name)
+           console.log(studentObjiect['city'])
+
+           var item1={
+                no : 1 ,
+               product :'coffee',
+               price :2300,
+               pcs :3
+           }
+           var item2={
+                no : 2 ,
+               product :'Milk',
+               price :500,
+               pcs :5
+           }
+           var item3={
+               No : 3 ,
+               product :'Apple',
+               price :700,
+               pcs :2
+           }
+           var All=[item1,item2,item3] ;
+           
+           console.log(All)
+           let studentData = [
+{name : 'MgMg' , age : 18 , city : 'Ygn'  },
+{name : 'AungAung' , age : 19, gpu :'Ygn'  },
+{name : 'Kaung' , age : 19, gpu :'Ygn' },
+] ;
+console.log(studentData)
+
+
+</script>
+</body>
+</html>
